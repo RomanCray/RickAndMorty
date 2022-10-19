@@ -127,9 +127,9 @@ body {
   cursor: pointer;
   font-size: 20px;  
   border-radius: 3em;  
+  text-decoration: underline;
   border: none;
-  color: #738f93; 
-  box-shadow: 0 0 15px #738f93;
+  color: #738f93;   
   background: transparent;  
   margin: 25px 5px 25px auto;
 }
@@ -156,12 +156,13 @@ h2 {
 }
 
 .back-home:hover {
-  color: #ffffff;
-  box-shadow: 0 0 15px #fff;
+  color: #738f93;
+  box-shadow: 0 0 15px #738f93;
+  text-decoration: none;
 }
 
 .title:hover {
-  text-shadow: 0 5px 10px #fff;
+  text-shadow: 0 0 1em #738f93;
 }
 
 @media (max-width: 768px) {
