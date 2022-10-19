@@ -8,7 +8,7 @@ body {
 
 .title {
   color: #738f93;
-  font-size: 40px;
+  font-size: 70px;
   font-family: fantasy, sans-serif;
   margin-bottom: 0;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .characters {
-  padding: 50px;
+  padding: 5px 50px 50px 50px;
 }
 
 .characters h1 {
@@ -121,9 +121,47 @@ body {
 }
 
 .back-home {
-  text-decoration: underline;
+  width: 10em;
+  /* display: inline-block; */  
+  font-family: fantasy, sans-serif;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 20px;  
+  border-radius: 3em;  
+  border: none;
+  color: #738f93; 
+  box-shadow: 0 0 15px #738f93;
+  background: transparent;  
+  margin: 25px 5px 25px auto;
+}
+
+h2 {
+  width: 49%;
+
+  font-family: fantasy, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  /*margin:  5px auto;*/
+  text-align: left; 
+  display: inline;
+}
+
+.character-container:hover {
+  box-shadow: 0 0 15px #738f93;
+}
+
+.pruebaJ {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+}
+
+.back-home:hover {
+  color: #ffffff;
+  box-shadow: 0 0 15px #fff;
+}
+
+.title:hover {
+  text-shadow: 0 5px 10px #fff;
 }
 
 @media (max-width: 768px) {

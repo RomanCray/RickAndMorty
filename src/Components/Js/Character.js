@@ -3,15 +3,18 @@ import React from 'react'
 export default function Character(props) {
     const { characters, setCharacters } = props;
 
-    const restCharacters = () => {
+    const restCharacters = (e) => {
+        e.preventDefault();
         setCharacters(null);
     };
 
     console.log(characters);
     return (
         <div className='characters'>
-            <h1>Personajes</h1>
-            <span className='back-home' onClick={restCharacters}>Volver</span>
+            <div className='pruebaJ'>
+                <h2>Personajes</h2>
+                <button className='back-home' onClick={restCharacters}>Volver</button>
+            </div>
             <div className='container-characters'>
                 {characters.map((character, index) => (
                     <div className='character-container' key={index}>
@@ -50,7 +53,7 @@ export default function Character(props) {
                     </div>
                 ))}
             </div>
-            <span className='back-home'>Volver</span>
+            <button className='back-home' onClick={restCharacters}>Volver</button>
         </div>
     )
 }
